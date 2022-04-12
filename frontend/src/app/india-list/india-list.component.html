@@ -1,0 +1,26 @@
+<div class="bg">
+    <h1 class="title">*****Welcome To India*****</h1>
+    <div class="card_design">
+        <div *ngFor="let list of tourist">
+    
+    
+            <mat-card class="india_card">
+                <mat-card-header>
+                    <div mat-card-avatar class="india_card-header-image"></div>
+                    <mat-card-title>Tourist places of India</mat-card-title>
+                    <mat-card-subtitle>India {{list.name}} </mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image class="card_image" [src]="list.imgpath" alt="photo">
+                <button mat-button color="primary" >Like</button>
+                <p>{{list.description}}</p>
+            </mat-card>
+            
+        
+        </div>
+        
+    
+    </div>
+    
+    
+
+</div>
